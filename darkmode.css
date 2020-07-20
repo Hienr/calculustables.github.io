@@ -1,0 +1,17 @@
+body {
+    background-color: #1F2933;
+}
+
+td {
+    color: #9AA5B1;
+}
+
+.subheader { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 150%;
+    color: #F5F7FA;
+}
+
+.rule {
+    color: #7B8794;
+}

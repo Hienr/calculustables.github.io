@@ -10,13 +10,6 @@
                 tex: {
                     inlineMath: [['$', '$'], ['\\(', '\\)']]
                 },
-
-                chtml: { displayAlign: 'left', scale: 90 },
-
-                svg: { scale: 90 }
-
-
-
             };
             </script>
 
@@ -26,6 +19,8 @@
                 };
             </script>
 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
             <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
         </script>
@@ -33,11 +28,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" type = "text/css" href = "style.css">
+        <link rel="stylesheet" type = "text/css" href = "darkmode.css">
 
     </head>
 
     <body>
+        <!-- stylesheet switch -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+
+        <script> 
+            $(document).ready(function(){
+                
+                $(".examples").hide();
+
+                $("td").click(function(){
+                $(".examples").show();
+                $(".examples").slideDown("slow");
+              });
+            });
+        </script>
+
         <div class ="content">
+
             <div class="section">
             <p class="subheader">General Formulas</p>
             
@@ -202,7 +217,7 @@
             </table>
 
         </div>
-      
+        <div class="examples">$$\large\frac{d}{dx}\ 8\ =\ 0$$</div>
         </div>
     </body>
 
