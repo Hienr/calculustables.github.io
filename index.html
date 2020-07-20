@@ -4,16 +4,206 @@
         <title>Derivatives</title>
         
         <!-- Imports -->
-        <script type="text/javascript" async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+            MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']]
+                },
+
+                chtml: { displayAlign: 'left', scale: 90 },
+
+                svg: { scale: 90 }
+
+
+
+            };
+            </script>
+
+            <script>
+                MathJax = {
+                    chtml: { displayAlign: 'left' }
+                };
+            </script>
+
+            <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
         </script>
 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type = "text/css" href = "style.css">
 
     </head>
 
     <body>
-        <p class="subheader">Trigonemetric Functions</p>
+        <div class ="content">
+            <div class="section">
+            <p class="subheader">General Formulas</p>
+            
+            <table>
+                <tr> 
+                    <td>
+                        <!-- Constant -->
+                        <p class="rule"><i><b>C</b></i> is defined as a constant</p>
+                        $$\large\frac{d}{dx}\ C\ =\ 0$$
+                    </td>
+                    <td>
+                        <!-- Term -->
+                        $$\large\frac{d}{dx}\ cf(x)\ =\ cf'(x)$$
+                    </td>
+                </tr>
 
+                <tr>
+                    <td>
+                        <!-- Add/Sub -->
+                        $$\large\frac{d}{dx}\ f(x)\ +\ g(x)\ =\ f'(x)\ +\ g'(x)$$
+                    </td>
+                    <td>
+                        <!-- Add/Sub -->
+                        $$\large\frac{d}{dx}\ f(x)\ -\ g(x)\ =\ f'(x)\ -\ g'(x)$$
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <!-- Product Rule -->
+                        <p class="rule">Product Rule</p>
+                        $$\large\frac{d}{dx}\ f(x)g(x) = f(x)g'(x) + g(x)f'(x)$$
+                    </td>
+                    <td>
+                        <!-- Quotient Rule -->
+                        <p class="rule">Quotient Rule</p>
+                        $$\large\frac{d}{dx}\ \frac{f(x)}{g(x)} = \frac{g(x)f'(x) - f(x)g'(x)}{g(x)^2}$$
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <!-- Chain Rule -->
+                        <p class="rule">Chain Rule</p>
+                        $$\large\frac{d}{dx}\ f(g(x)) = f'(g(x))g'(x)$$
+                    </td>
+                    <td>
+                        <!-- Power Rule -->
+                        <p class="rule">Power Rule</p>
+                        $$\large\frac{d}{dx}\ x^n = nx^{n-1}$$
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <p class="subheader">Exponential and Logarithmic Functions</p>
+
+            <table>
+                <tr> 
+                    <td>
+                        <!-- e^x-->
+                        $$\large\frac{d}{dx}\ e^x = e^x$$
+                    </td>
+                    <td>
+                        <!-- ln x -->
+                        $$\large\frac{d}{dx}\ ln\ |x| = \frac{1}{x}$$
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <!-- exponential-->
+                        $$\large\frac{d}{dx}\ b^x = b^x\ ln\ b$$
+                    </td>
+                    <td>
+                        <!-- logx -->
+                        $$\large\frac{d}{dx}\ \log_b x = \frac{1}{x\ ln\ b}$$
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="section">
+            <p class="subheader">Trigonometric Functions</p>
+
+            <table>
+                <tr> 
+                    <td>
+                        <!-- sin x -->
+                        $$\large\frac{d}{dx}\ \sin(x) = \cos(x)$$
+                    </td>
+                    <td>
+                        <!-- csc x -->
+                        $$\large\frac{d}{dx}\ \csc(x) = -\csc(x)\cot(x)$$
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <!-- cos x -->
+                        $$\large\frac{d}{dx}\ \cos(x) = -\sin(x)$$
+                    </td>
+                    <td>
+                        <!-- sec x -->
+                        $$\large\frac{d}{dx}\ \sec(x) = \sec(x)\tan(x)$$
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <!-- tan x -->
+                        $$\large\frac{d}{dx}\ \tan(x) = \sec^2(x)$$
+                    </td>
+                    <td>
+                        <!-- cot x -->
+                        $$\large\frac{d}{dx}\ \cot(x) = -\csc^2(c)$$
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="section">
+            <p class="subheader">Inverse Trigonometric Functions</p>
+
+            <table>
+                <tr> 
+                    <td>
+                        <!-- sin x -->
+                        $$\large\frac{d}{dx}\ \sin^{-1}(x) = \frac{1}{\sqrt{1-x^2}}$$
+                    </td>
+                    <td>
+                        <!-- csc x -->
+                        $$\large\frac{d}{dx}\ \csc^{-1}(x) = -\frac{1}{x\sqrt{1-x^2}}$$
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <!-- cos x -->
+                        $$\large\frac{d}{dx}\ \cos^{-1}(x) = -\frac{1}{\sqrt{1-x^2}}$$
+                    </td>
+                    <td>
+                        <!-- sec x -->
+                        $$\large\frac{d}{dx}\ \sec^{-1}(x) = \frac{1}{x\sqrt{x^2-1}}$$
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>
+                        <!-- tan x -->
+                        $$\large\frac{d}{dx}\ \tan^{-1}(x) = \frac{1}{1+x^2}$$
+                    </td>
+                    <td>
+                        <!-- cot x -->
+                        $$\large\frac{d}{dx}\ \cot^{-1}(x) = -\frac{1}{1+x^2}$$
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+      
+        </div>
     </body>
 
 </html>

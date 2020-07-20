@@ -1,0 +1,31 @@
+body {
+    background-color: #1F2933;
+}
+
+td {
+    width: 325px;
+    /* text-align: left; */
+    padding-bottom: 5px;
+    color: #9AA5B1;
+}
+
+
+.content {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.subheader { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 150%;
+    color: #F5F7FA;
+}
+
+.rule {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15%;
+    font-size: 80%;
+    font-style: italic;
+    color: #7B8794;
+}
